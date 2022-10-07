@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jquery Selector</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     
     <style>
         body{
@@ -106,112 +105,6 @@
             </div>
         </div>
     </div>
-    
-    
-
-    <script>
-        $(document).ready(function(){
-            $('#heading1').find('a').trigger('click').text('James Aaron Guevarra');
-            $('.para2').hide();
-            $('p span').css('color', 'blue');
-            $('ul#list li:first').css('font-weight', '700');
-            $('ul#list li:last').hide();
-            $('ul#list li:even').css('color', 'red');
-            $('.text1').hide();
-            $('.a-link').css('color', 'blue');
-            $('a[href="https://www.youtube.com/"]').css('color', 'brown');
-           $('#btn1').click(function(){
-                alert(' ALYSSA MARIE MONTECILLO !!!');
-            });
-            $('#btn2').click(function(){
-                alert('Button Clicked! ');
-            });
-            
-             /*
-            $('#btn1').on('click', function(){
-                //$('.para3').hide();
-                $('.para3').toggle();
-            });
-            
-            $('#btn2').on('click', function(){
-                $('.para3').show();
-            });
-            $('#btn1').dblclick(function(){
-                $('.para3').toggle();
-            });
-            $('#btn1').hover(function(){
-                $('.para3').toggle();
-            });
-            
-            $('#btn1').on('mouseenter', function(){
-                $('.para3').toggle();
-            });
-            $('#btn1').on('mouseleave', function(){
-                $('.para3').toggle();
-            });
-            
-            $('#btn1').on('mousemove', function(){
-                $('.para3').toggle();
-            });
-            
-            $('#btn1').on('mousedown', function(){
-                $('.para3').toggle();
-            });
-            $('#btn1').on('mouseup', function(){
-                $('.para3').toggle();
-            });
-            
-            $('#btn2').click(function(e){
-               //alert(e.currentTarget.id);
-               //alert(e.currentTarget.innerHTML);
-               //alert(e.currentTarget.outerHTML);
-               //alert(e.currentTarget.className);
-            });
-            $('#btn2').on('mousemove', function(e){
-               console.log('Coords: Y: '+e.clientY+" X: "+e.clientX);
-            });
-            
-            $('#btn2').on('mousemove', function(e){
-               $('#coords').html('Coords: Y: '+e.clientY+" X: "+e.clientX);
-            });
-            
-            $('input').focus(function(){
-                //alert('Focus');
-                //$('input#name').css('background', 'lightblue');
-                $(this).css('background', 'lightblue');
-            });
-            $('input').blur(function(){
-                $(this).css('background', '#f4f4f4');
-            });
-            //$('input').keyup(function(){
-                //console.log('keyup');
-            //});
-        
-            $('input').keyup(function(e){
-                console.log(e.target.value);
-            });
-            
-           $('select#gender').change(function(){
-            alert('changed');
-           });
-           */
-           $('select#gender').change(function(e){
-            alert(e.target.value);
-           });
-           $('form').submit(function(e){
-            e.preventDefault();
-            var name = $('input#name').val();
-            console.log('name');
-           });
-
-
-
-
-
-        });        
-    </script>
-    
-
-
+   
 </body>
 </html>
